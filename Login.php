@@ -120,13 +120,10 @@
 
             <!-- ゲストログイン（auth.php に POST） -->
             <div class="card-wrapper">
-                <form method="POST" action="auth.php" style="display:flex;flex-direction:column;gap:12px;align-items:center;">
-                    <div class="card" onclick="this.parentElement.querySelector('button').click();">
-                        <img src="https://deckofcardsapi.com/static/img/X1.png" alt="joker card">
-                    </div>
-                    <input type="hidden" name="guest" value="1">
-                    <button type="submit" class="btn btn-secondary">ゲストユーザー</button>
-                </form>
+                <div class="card" onclick="location.href='GameChange.php'">
+                    <img src="https://deckofcardsapi.com/static/img/X1.png" alt="joker card">
+                </div>
+                <button class="btn btn-secondary" onclick="location.href='GameChange.php'">ゲストユーザー</button>
             </div>
 
             <!-- user_id -->
